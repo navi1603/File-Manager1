@@ -1,0 +1,13 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<VBox fx:controller="java.file.manager.Controller"
+      xmlns:fx="http://javafx.com/fxml" alignment="center">
+    <MenuBar>
+        <Menu>
+            <MenuItem text="Выйти из программы"/>
+        </Menu>
+    </MenuBar>
+</VBox>
