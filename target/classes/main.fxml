@@ -15,7 +15,7 @@
         <TextField editable="false" HBox.hgrow="ALWAYS" />
         <Button text="Ввeрх" />
     </HBox>
-    <TableView VBox.vgrow="ALWAYS" />
+    <TableView fx:id="filesTable" VBox.vgrow="ALWAYS" />
     <HBox spacing="5">
         <Button maxWidth="Infinity" text="Копирование файл" HBox.hgrow="ALWAYS" />
         <Button maxWidth="Infinity" text="Перемещение файл" HBox.hgrow="ALWAYS" />
