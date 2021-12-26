@@ -4,18 +4,18 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="center" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="com.ukrainec.java.file.manager.Controller">
+<VBox alignment="center" xmlns:fx="http://javafx.com/fxml/1"
+      xmlns="http://javafx.com/javafx/10.0.2-internal"
+      fx:controller="com.ukrainec.java.file.manager.Controller">
     <MenuBar>
         <Menu text="File">
             <MenuItem text="Выйти из программы" onAction="#btnExitActon"/>
         </Menu>
     </MenuBar>
-    <HBox>
-        <ComboBox />
-        <TextField editable="false" HBox.hgrow="ALWAYS" />
-        <Button text="Ввeрх" />
+    <HBox VBox.vgrow="ALWAYS">
+        <fx:include fx:id="leftPanel" source="panel.fxml" HBox.hgrow="ALWAYS"/>
+        <fx:include fx:id="rightPanel" source="panel.fxml" HBox.hgrow="ALWAYS"/>
     </HBox>
-    <TableView fx:id="filesTable" VBox.vgrow="ALWAYS" />
     <HBox spacing="5">
         <Button maxWidth="Infinity" text="Копирование файл" HBox.hgrow="ALWAYS" />
         <Button maxWidth="Infinity" text="Перемещение файл" HBox.hgrow="ALWAYS" />
