@@ -17,10 +17,10 @@
         <fx:include fx:id="rightPanel" source="panel.fxml" HBox.hgrow="ALWAYS"/>
     </HBox>
     <HBox spacing="5">
-        <Button maxWidth="Infinity" text="Копирование файл" HBox.hgrow="ALWAYS" />
-        <Button maxWidth="Infinity" text="Перемещение файл" HBox.hgrow="ALWAYS" />
-        <Button maxWidth="Infinity" text="Удалить файл" HBox.hgrow="ALWAYS" />
-        <Button maxWidth="Infinity" text="Выход из программы" HBox.hgrow="ALWAYS" onAction="#btnExitActon"/>
+        <Button maxWidth="Infinity" focusTraversable="false" text="Копирование файл" HBox.hgrow="ALWAYS" onAction="#copyBtnAction"/>
+        <Button maxWidth="Infinity" focusTraversable="false" text="Перемещение файл" HBox.hgrow="ALWAYS" />
+        <Button maxWidth="Infinity" focusTraversable="false" text="Удалить файл" HBox.hgrow="ALWAYS" />
+        <Button maxWidth="Infinity" focusTraversable="false" text="Выход из программы" HBox.hgrow="ALWAYS" onAction="#btnExitActon"/>
       <padding>
          <Insets bottom="5.0" right="5.0" top="5.0" />
       </padding>

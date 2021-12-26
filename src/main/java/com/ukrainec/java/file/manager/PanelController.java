@@ -115,4 +115,17 @@ public class PanelController implements Initializable {
         ComboBox<String> element = (ComboBox<String>) actionEvent.getSource();
         updateList(Paths.get(element.getSelectionModel().getSelectedItem()));
     }
+
+    public String getSelectedFileName() {
+        if(!filesTable.isFocused()) {
+            return null;
+        }
+        return filesTable.getSelectionModel().getSelectedItem().getFileName();
+    }
+
+    public String getCurrentPath() {
+        return pathField.getText();
+    }
+
+
 }
